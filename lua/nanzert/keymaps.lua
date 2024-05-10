@@ -21,4 +21,4 @@ keymap("v", ">", ">gv^", opts)
 
 -- Terminal --
 -- Exit terminal
-keymap("t", "kjf", "<с-\\><c-n>", opts)
+keymap("t", "kjf", "<c-bslash><c-n>", {})
