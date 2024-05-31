@@ -11,6 +11,7 @@ local servers = {
     -- "asm_lsp",
     -- "omnisharp",
     -- "rust_analyzer", -- set up by rustaceanvim
+    "jdtls",
 }
 
 local settings = {

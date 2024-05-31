@@ -52,7 +52,7 @@ return require('packer').startup(function(use)
     use "neovim/nvim-lspconfig"
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
-    use "jose-elias-alvarez/null-ls.nvim"
+    use "nvimtools/none-ls.nvim"
     use "RRethy/vim-illuminate"
 
     -- Telescope
@@ -67,6 +67,13 @@ return require('packer').startup(function(use)
 
     -- Rust
     use "mrcjkb/rustaceanvim"
+
+    -- Harpoon
+    use "ThePrimeagen/harpoon"
+
+    -- Copilot
+    use "zbirenbaum/copilot.lua"
+    use "zbirenbaum/copilot-cmp"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

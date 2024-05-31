@@ -23,7 +23,16 @@ local mappings = {
         q = { vim.diagnostic.setloclist, "Local quickfix" },
         Q = { vim.diagnostic.setqflist, "Quickfix" },
         r = { vim.lsp.buf.rename, "Rename" },
+        h = { function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = nil })) end, "Inlay hints" },
     },
+	h = {
+		name = "Harpoon",
+		a = { require('harpoon.mark').add_file, "Add File" },
+		c = { require('harpoon.ui').toggle_quick_menu, "Quick Menu" },
+        j = { function() require('harpoon.ui').nav_file(1) end, "Next File" },
+        k = { function() require('harpoon.ui').nav_file(-1) end, "Prev File" },
+	},
+    hl = { "<cmd>nohlsearch<CR>", "No Highlight" },
     ["/"] = { require("Comment.api").toggle.linewise.current, "Comment" },
 }
 
