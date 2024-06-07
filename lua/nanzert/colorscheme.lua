@@ -24,4 +24,4 @@ require("gruvbox").setup({
     transparent_mode = false,
 })
 
-vim.cmd("colorschem gruvbox")
+vim.cmd("colorschem torte")
