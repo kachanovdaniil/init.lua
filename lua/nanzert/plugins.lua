@@ -28,7 +28,9 @@ return require('packer').startup(function(use)
     use "windwp/nvim-autopairs"
 
     use "folke/neodev.nvim"
-
+    
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
+    use 'mfussenegger/nvim-dap'
     -- maybe later
     -- use { "glacambre/firenvim", run = function()
     --     vim.fn["firenvim#install"](0)
@@ -44,7 +46,7 @@ return require('packer').startup(function(use)
     use "hrsh7th/cmp-cmdline"
     use "hrsh7th/nvim-cmp"
     use "saadparwaiz1/cmp_luasnip"
-
+    use "mfussenegger/nvim-dap-python" 
     -- Snippets
     use "L3MON4D3/LuaSnip"
 

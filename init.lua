@@ -11,3 +11,14 @@ require "nanzert.illuminate"
 require "nanzert.autopairs"
 require "nanzert.rustaceanvim"
 require "nanzert.copilot"
+require("neodev").setup({
+  library = { plugins = { "nvim-dap-ui" }, types = true },
+})
+require("dap-python").setup("python")
+require('dap-python').test_runner = 'pytest'
+local dapui = require('dapui')
+
+-- Настройка nvim-dap-ui (если требуется)
+dapui.setup()
+
+require('dap-python').test_runner = 'pytest'
